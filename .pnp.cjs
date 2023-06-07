@@ -327,6 +327,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@thepsyentist/client", "workspace:apps/client"],\
             ["@thepsyentist/lib", "workspace:packages/lib"],\
+            ["@thepsyentist/ui", "workspace:packages/ui"],\
             ["@types/node", "npm:20.2.5"],\
             ["@types/react", "npm:18.2.8"],\
             ["@types/react-dom", "npm:18.2.4"],\
@@ -334,7 +335,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-next", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:13.4.4"],\
             ["next", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:13.4.4"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:18.2.0"],\
+            ["react-dom", "virtual:13def2beb53a1d58ead48ca526409261e9c1160720c293c62bafbab5a2c43b83c09d7f95bf66be121fc9d5ca9de05b8db2c315ba562efcbd2b0a7d9fa7d0994f#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -359,7 +360,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.2.8"],\
             ["@types/react-dom", "npm:18.2.4"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:18.2.0"],\
+            ["react-dom", "virtual:13def2beb53a1d58ead48ca526409261e9c1160720c293c62bafbab5a2c43b83c09d7f95bf66be121fc9d5ca9de05b8db2c315ba562efcbd2b0a7d9fa7d0994f#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -2831,7 +2832,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fibers", null],\
             ["postcss", "npm:8.4.14"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:18.2.0"],\
+            ["react-dom", "virtual:13def2beb53a1d58ead48ca526409261e9c1160720c293c62bafbab5a2c43b83c09d7f95bf66be121fc9d5ca9de05b8db2c315ba562efcbd2b0a7d9fa7d0994f#npm:18.2.0"],\
             ["sass", null],\
             ["styled-jsx", "virtual:ae8198faf0c613dcf295b46621e9781ce4e5c97c42ddf1af71e102b0827a818714f8a3acd7849b491efdf5c4a8eebcea0130c2f68d56d0ab2b837814f8fd22bd#npm:5.1.1"],\
             ["zod", "npm:3.21.4"]\
@@ -3201,10 +3202,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:18.2.0", {\
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-b0f96f303e/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
+        ["virtual:13def2beb53a1d58ead48ca526409261e9c1160720c293c62bafbab5a2c43b83c09d7f95bf66be121fc9d5ca9de05b8db2c315ba562efcbd2b0a7d9fa7d0994f#npm:18.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-9ec1b3b704/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
-            ["react-dom", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:18.2.0"],\
+            ["react-dom", "virtual:13def2beb53a1d58ead48ca526409261e9c1160720c293c62bafbab5a2c43b83c09d7f95bf66be121fc9d5ca9de05b8db2c315ba562efcbd2b0a7d9fa7d0994f#npm:18.2.0"],\
             ["@types/react", "npm:18.2.8"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\

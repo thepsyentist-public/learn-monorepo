@@ -222,6 +222,7 @@ __metadata:
   resolution: "@thepsyentist/client@workspace:apps/client"
   dependencies:
     "@thepsyentist/lib": "workspace:^"
+    "@thepsyentist/ui": "workspace:^"
     "@types/node": 20.2.5
     "@types/react": 18.2.8
     "@types/react-dom": 18.2.4
@@ -242,7 +243,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@thepsyentist/ui@workspace:packages/ui":
+"@thepsyentist/ui@workspace:^, @thepsyentist/ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "@thepsyentist/ui@workspace:packages/ui"
   dependencies:
