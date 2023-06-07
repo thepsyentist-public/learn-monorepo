@@ -1,13 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.base.json",     // 👈 추가
   "compilerOptions": {
-    "strict": true,
-    "useUnknownInCatchVariables": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "newLine": "lf",
     "module": "ESNext",
     "moduleResolution": "node",
     "target": "ESNext",
@@ -17,8 +11,7 @@
     "baseUrl": "./src",
     "noEmit": false,
     "incremental": true,
-    "resolveJsonModule": true,
-    "paths": {}
+    "resolveJsonModule": true
   },
   "exclude": ["**/node_modules", "**/.*/", "./dist", "./coverage"],
   "include": ["**/*.ts", "**/*.js", "**/.cjs", "**/*.mjs", "**/*.json"]
