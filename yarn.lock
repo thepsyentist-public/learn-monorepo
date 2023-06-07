@@ -221,6 +221,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@thepsyentist/client@workspace:apps/client"
   dependencies:
+    "@thepsyentist/lib": "workspace:^"
     "@types/node": 20.2.5
     "@types/react": 18.2.8
     "@types/react-dom": 18.2.4
@@ -230,6 +231,14 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 5.1.3
+  languageName: unknown
+  linkType: soft
+
+"@thepsyentist/lib@workspace:^, @thepsyentist/lib@workspace:packages/lib":
+  version: 0.0.0-use.local
+  resolution: "@thepsyentist/lib@workspace:packages/lib"
+  dependencies:
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -1920,6 +1929,8 @@ __metadata:
 "learn-monorepo@workspace:.":
   version: 0.0.0-use.local
   resolution: "learn-monorepo@workspace:."
+  dependencies:
+    typescript: ^5.1.3
   languageName: unknown
   linkType: soft
 
@@ -2875,7 +2886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.1.3":
+"typescript@npm:5.1.3, typescript@npm:^5.1.3":
   version: 5.1.3
   resolution: "typescript@npm:5.1.3"
   bin:
@@ -2885,7 +2896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.1.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@5.1.3#~builtin<compat/typescript>, typescript@patch:typescript@^5.1.3#~builtin<compat/typescript>":
   version: 5.1.3
   resolution: "typescript@patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"
   bin:

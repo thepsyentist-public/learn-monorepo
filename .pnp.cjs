@@ -18,12 +18,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@thepsyentist/client",\
         "reference": "workspace:apps/client"\
+      },\
+      {\
+        "name": "@thepsyentist/lib",\
+        "reference": "workspace:packages/lib"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["@thepsyentist/client", ["workspace:apps/client"]],\
+      ["@thepsyentist/lib", ["workspace:packages/lib"]],\
       ["learn-monorepo", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -33,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -306,6 +312,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./apps/client/",\
           "packageDependencies": [\
             ["@thepsyentist/client", "workspace:apps/client"],\
+            ["@thepsyentist/lib", "workspace:packages/lib"],\
             ["@types/node", "npm:20.2.5"],\
             ["@types/react", "npm:18.2.8"],\
             ["@types/react-dom", "npm:18.2.4"],\
@@ -314,6 +321,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:13.4.4"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@thepsyentist/lib", [\
+        ["workspace:packages/lib", {\
+          "packageLocation": "./packages/lib/",\
+          "packageDependencies": [\
+            ["@thepsyentist/lib", "workspace:packages/lib"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
@@ -2394,7 +2411,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["learn-monorepo", "workspace:."]\
+            ["learn-monorepo", "workspace:."],\
+            ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
         }]\
