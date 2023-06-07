@@ -242,6 +242,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@thepsyentist/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@thepsyentist/ui@workspace:packages/ui"
+  languageName: unknown
+  linkType: soft
+
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.12
   resolution: "@types/json-schema@npm:7.0.12"

@@ -22,6 +22,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@thepsyentist/lib",\
         "reference": "workspace:packages/lib"\
+      },\
+      {\
+        "name": "@thepsyentist/ui",\
+        "reference": "workspace:packages/ui"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -29,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@thepsyentist/client", ["workspace:apps/client"]],\
       ["@thepsyentist/lib", ["workspace:packages/lib"]],\
+      ["@thepsyentist/ui", ["workspace:packages/ui"]],\
       ["learn-monorepo", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -341,6 +346,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@thepsyentist/lib", "workspace:packages/lib"],\
             ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@thepsyentist/ui", [\
+        ["workspace:packages/ui", {\
+          "packageLocation": "./packages/ui/",\
+          "packageDependencies": [\
+            ["@thepsyentist/ui", "workspace:packages/ui"]\
           ],\
           "linkType": "SOFT"\
         }]\
