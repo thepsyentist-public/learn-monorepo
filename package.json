@@ -2,6 +2,9 @@
   "name": "learn-monorepo",
   "packageManager": "yarn@3.6.0",
   "private": true,
+  "scripts": {
+    "g:typecheck": "yarn workspaces foreach -pv run typecheck"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
