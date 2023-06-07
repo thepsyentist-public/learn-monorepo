@@ -9,7 +9,7 @@ export default function Home() {
       <div className={styles.description}>
         <p>{sayHello('bytrustu')}</p>
         <p>
-          <Button>버튼</Button>
+          <Button variant="contained">버튼</Button>
         </p>
         <p>
           Get started by editing&nbsp;
