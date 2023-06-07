@@ -354,7 +354,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/ui", {\
           "packageLocation": "./packages/ui/",\
           "packageDependencies": [\
-            ["@thepsyentist/ui", "workspace:packages/ui"]\
+            ["@thepsyentist/ui", "workspace:packages/ui"],\
+            ["@types/node", "npm:20.2.5"],\
+            ["@types/react", "npm:18.2.8"],\
+            ["@types/react-dom", "npm:18.2.4"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:b6139af13c4d6cee8a12bfdc255452314ae2a0227b652f2ce31f11873bd971af4d04379a3e4027272ff3cc91c65ca983c64fc0f6d2db5303d8adb91149ad6fd4#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=5da071"]\
           ],\
           "linkType": "SOFT"\
         }]\
